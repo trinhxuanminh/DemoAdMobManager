@@ -7,23 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9606BA2527ED79DE00AA1374 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606BA2427ED79DE00AA1374 /* UIApplicationExtension.swift */; };
+		9606BA2727ED7A1F00AA1374 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606BA2627ED7A1F00AA1374 /* UIViewControllerExtension.swift */; };
+		9628281D2A5D36F400D7E71C /* CustomNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9628281B2A5D36F400D7E71C /* CustomNativeAdView.swift */; };
+		9628281E2A5D36F400D7E71C /* CustomNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9628281C2A5D36F400D7E71C /* CustomNativeAdView.xib */; };
+		962828222A5D589D00D7E71C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 962828212A5D589D00D7E71C /* SnapKit */; };
 		9638FEE027EC250C00851CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638FEDF27EC250C00851CAF /* AppDelegate.swift */; };
 		9638FEE227EC250C00851CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638FEE127EC250C00851CAF /* SceneDelegate.swift */; };
-		9638FEE427EC250C00851CAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638FEE327EC250C00851CAF /* ViewController.swift */; };
 		9638FEE727EC250C00851CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9638FEE527EC250C00851CAF /* Main.storyboard */; };
 		9638FEE927EC250F00851CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9638FEE827EC250F00851CAF /* Assets.xcassets */; };
 		9638FEEC27EC250F00851CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9638FEEA27EC250F00851CAF /* LaunchScreen.storyboard */; };
+		96708A8727EDBF94003834A0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96708A8527EDBF94003834A0 /* SecondViewController.swift */; };
+		96708A8827EDBF94003834A0 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96708A8627EDBF94003834A0 /* SecondViewController.xib */; };
+		96708A9127EE0FF1003834A0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96708A9027EE0FF0003834A0 /* UIColorExtension.swift */; };
+		96932D18293CF1BC0004119A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96932D17293CF1BC0004119A /* BaseViewController.swift */; };
+		96932D1A293CF1E00004119A /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96932D19293CF1E00004119A /* ViewProtocol.swift */; };
+		96932D1E293D0AD80004119A /* InterfaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96932D1C293D0AD80004119A /* InterfaceVC.swift */; };
+		96932D1F293D0AD80004119A /* InterfaceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96932D1D293D0AD80004119A /* InterfaceVC.xib */; };
+		9696EE1227F2E87700559454 /* AdMobManager in Frameworks */ = {isa = PBXBuildFile; productRef = 9696EE1127F2E87700559454 /* AdMobManager */; };
+		96B7BAAA2A5D5A93003E95EE /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 96B7BAA92A5D5A93003E95EE /* NVActivityIndicatorView */; };
+		96E20385298B65FB00C10D47 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E20379298B65FA00C10D47 /* Roboto-Italic.ttf */; };
+		96E20386298B65FB00C10D47 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E2037A298B65FA00C10D47 /* Roboto-Black.ttf */; };
+		96E20387298B65FB00C10D47 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E2037B298B65FB00C10D47 /* Roboto-MediumItalic.ttf */; };
+		96E20388298B65FB00C10D47 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E2037C298B65FB00C10D47 /* Roboto-Regular.ttf */; };
+		96E20389298B65FB00C10D47 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E2037D298B65FB00C10D47 /* Roboto-BoldItalic.ttf */; };
+		96E2038A298B65FB00C10D47 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E2037E298B65FB00C10D47 /* Roboto-LightItalic.ttf */; };
+		96E2038B298B65FB00C10D47 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E2037F298B65FB00C10D47 /* Roboto-Thin.ttf */; };
+		96E2038C298B65FB00C10D47 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E20380298B65FB00C10D47 /* Roboto-ThinItalic.ttf */; };
+		96E2038D298B65FB00C10D47 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E20381298B65FB00C10D47 /* Roboto-Light.ttf */; };
+		96E2038E298B65FB00C10D47 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E20382298B65FB00C10D47 /* Roboto-Medium.ttf */; };
+		96E2038F298B65FB00C10D47 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E20383298B65FB00C10D47 /* Roboto-BlackItalic.ttf */; };
+		96E20390298B65FB00C10D47 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E20384298B65FB00C10D47 /* Roboto-Bold.ttf */; };
+		96E8B70C2A2EE82A00BC8C80 /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8B70A2A2EE82A00BC8C80 /* BannerVC.swift */; };
+		96E8B70D2A2EE82A00BC8C80 /* BannerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E8B70B2A2EE82A00BC8C80 /* BannerVC.xib */; };
+		96E91B9427EF4C5E003E7B0A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E91B9327EF4C5E003E7B0A /* StringExtension.swift */; };
+		96ED6BF927EDAA1400F4315D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED6BF827EDAA1400F4315D /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9606BA2427ED79DE00AA1374 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		9606BA2627ED7A1F00AA1374 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		9628281B2A5D36F400D7E71C /* CustomNativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNativeAdView.swift; sourceTree = "<group>"; };
+		9628281C2A5D36F400D7E71C /* CustomNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNativeAdView.xib; sourceTree = "<group>"; };
 		9638FEDC27EC250C00851CAF /* AdmobLibraryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdmobLibraryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9638FEDF27EC250C00851CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9638FEE127EC250C00851CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9638FEE327EC250C00851CAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9638FEE627EC250C00851CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9638FEE827EC250F00851CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9638FEEB27EC250F00851CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9638FEED27EC250F00851CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96708A8527EDBF94003834A0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		96708A8627EDBF94003834A0 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		96708A9027EE0FF0003834A0 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		96932D17293CF1BC0004119A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		96932D19293CF1E00004119A /* ViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		96932D1C293D0AD80004119A /* InterfaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceVC.swift; sourceTree = "<group>"; };
+		96932D1D293D0AD80004119A /* InterfaceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterfaceVC.xib; sourceTree = "<group>"; };
+		96E20379298B65FA00C10D47 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		96E2037A298B65FA00C10D47 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		96E2037B298B65FB00C10D47 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		96E2037C298B65FB00C10D47 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		96E2037D298B65FB00C10D47 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		96E2037E298B65FB00C10D47 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		96E2037F298B65FB00C10D47 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		96E20380298B65FB00C10D47 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		96E20381298B65FB00C10D47 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		96E20382298B65FB00C10D47 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		96E20383298B65FB00C10D47 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		96E20384298B65FB00C10D47 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		96E8B70A2A2EE82A00BC8C80 /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
+		96E8B70B2A2EE82A00BC8C80 /* BannerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerVC.xib; sourceTree = "<group>"; };
+		96E91B9327EF4C5E003E7B0A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		96ED6BF827EDAA1400F4315D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +86,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9696EE1227F2E87700559454 /* AdMobManager in Frameworks */,
+				962828222A5D589D00D7E71C /* SnapKit in Frameworks */,
+				96B7BAAA2A5D5A93003E95EE /* NVActivityIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9606BA2227ED798800AA1374 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				96708A9027EE0FF0003834A0 /* UIColorExtension.swift */,
+				9606BA2627ED7A1F00AA1374 /* UIViewControllerExtension.swift */,
+				9606BA2427ED79DE00AA1374 /* UIApplicationExtension.swift */,
+				96E91B9327EF4C5E003E7B0A /* StringExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		9606BA2327ED799C00AA1374 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				96932D19293CF1E00004119A /* ViewProtocol.swift */,
+				96932D17293CF1BC0004119A /* BaseViewController.swift */,
+				9638FEEA27EC250F00851CAF /* LaunchScreen.storyboard */,
+				9638FEE527EC250C00851CAF /* Main.storyboard */,
+				96ED6BF727EDA9ED00F4315D /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9628281F2A5D568C00D7E71C /* CustomNativeAdView */ = {
+			isa = PBXGroup;
+			children = (
+				9628281B2A5D36F400D7E71C /* CustomNativeAdView.swift */,
+				9628281C2A5D36F400D7E71C /* CustomNativeAdView.xib */,
+			);
+			path = CustomNativeAdView;
+			sourceTree = "<group>";
+		};
 		9638FED327EC250C00851CAF = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +146,73 @@
 		9638FEDE27EC250C00851CAF /* AdmobLibraryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9638FEED27EC250F00851CAF /* Info.plist */,
 				9638FEDF27EC250C00851CAF /* AppDelegate.swift */,
 				9638FEE127EC250C00851CAF /* SceneDelegate.swift */,
-				9638FEE327EC250C00851CAF /* ViewController.swift */,
-				9638FEE527EC250C00851CAF /* Main.storyboard */,
 				9638FEE827EC250F00851CAF /* Assets.xcassets */,
-				9638FEEA27EC250F00851CAF /* LaunchScreen.storyboard */,
-				9638FEED27EC250F00851CAF /* Info.plist */,
+				96E20378298B65E700C10D47 /* Fonts */,
+				9606BA2227ED798800AA1374 /* Extension */,
+				9606BA2327ED799C00AA1374 /* UI */,
 			);
 			path = AdmobLibraryDemo;
+			sourceTree = "<group>";
+		};
+		96708A8427EDBF7A003834A0 /* SecondViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96708A8527EDBF94003834A0 /* SecondViewController.swift */,
+				96708A8627EDBF94003834A0 /* SecondViewController.xib */,
+			);
+			path = SecondViewController;
+			sourceTree = "<group>";
+		};
+		96932D1B293D0ABF0004119A /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				96932D1C293D0AD80004119A /* InterfaceVC.swift */,
+				96932D1D293D0AD80004119A /* InterfaceVC.xib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		96E20378298B65E700C10D47 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				96E2037A298B65FA00C10D47 /* Roboto-Black.ttf */,
+				96E20383298B65FB00C10D47 /* Roboto-BlackItalic.ttf */,
+				96E20384298B65FB00C10D47 /* Roboto-Bold.ttf */,
+				96E2037D298B65FB00C10D47 /* Roboto-BoldItalic.ttf */,
+				96E20379298B65FA00C10D47 /* Roboto-Italic.ttf */,
+				96E20381298B65FB00C10D47 /* Roboto-Light.ttf */,
+				96E2037E298B65FB00C10D47 /* Roboto-LightItalic.ttf */,
+				96E20382298B65FB00C10D47 /* Roboto-Medium.ttf */,
+				96E2037B298B65FB00C10D47 /* Roboto-MediumItalic.ttf */,
+				96E2037C298B65FB00C10D47 /* Roboto-Regular.ttf */,
+				96E2037F298B65FB00C10D47 /* Roboto-Thin.ttf */,
+				96E20380298B65FB00C10D47 /* Roboto-ThinItalic.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		96E8B7092A2EE81900BC8C80 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				96E8B70A2A2EE82A00BC8C80 /* BannerVC.swift */,
+				96E8B70B2A2EE82A00BC8C80 /* BannerVC.xib */,
+			);
+			name = Banner;
+			sourceTree = "<group>";
+		};
+		96ED6BF727EDA9ED00F4315D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96ED6BF827EDAA1400F4315D /* SplashViewController.swift */,
+				96708A8427EDBF7A003834A0 /* SecondViewController */,
+				96932D1B293D0ABF0004119A /* Interface */,
+				96E8B7092A2EE81900BC8C80 /* Banner */,
+				9628281F2A5D568C00D7E71C /* CustomNativeAdView */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +231,11 @@
 			dependencies = (
 			);
 			name = AdmobLibraryDemo;
+			packageProductDependencies = (
+				9696EE1127F2E87700559454 /* AdMobManager */,
+				962828212A5D589D00D7E71C /* SnapKit */,
+				96B7BAA92A5D5A93003E95EE /* NVActivityIndicatorView */,
+			);
 			productName = AdmobLibraryDemo;
 			productReference = 9638FEDC27EC250C00851CAF /* AdmobLibraryDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -95,7 +248,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					9638FEDB27EC250C00851CAF = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -111,6 +264,11 @@
 				Base,
 			);
 			mainGroup = 9638FED327EC250C00851CAF;
+			packageReferences = (
+				9696EE1027F2E87600559454 /* XCRemoteSwiftPackageReference "AdMobManager" */,
+				962828202A5D589D00D7E71C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				96B7BAA82A5D5A93003E95EE /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
 			productRefGroup = 9638FEDD27EC250C00851CAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +283,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96932D1F293D0AD80004119A /* InterfaceVC.xib in Resources */,
+				96E2038A298B65FB00C10D47 /* Roboto-LightItalic.ttf in Resources */,
+				96E20385298B65FB00C10D47 /* Roboto-Italic.ttf in Resources */,
 				9638FEEC27EC250F00851CAF /* LaunchScreen.storyboard in Resources */,
+				96E2038D298B65FB00C10D47 /* Roboto-Light.ttf in Resources */,
+				96E2038E298B65FB00C10D47 /* Roboto-Medium.ttf in Resources */,
+				96E20390298B65FB00C10D47 /* Roboto-Bold.ttf in Resources */,
 				9638FEE927EC250F00851CAF /* Assets.xcassets in Resources */,
+				96E2038F298B65FB00C10D47 /* Roboto-BlackItalic.ttf in Resources */,
+				96E20387298B65FB00C10D47 /* Roboto-MediumItalic.ttf in Resources */,
+				96E8B70D2A2EE82A00BC8C80 /* BannerVC.xib in Resources */,
+				96E20386298B65FB00C10D47 /* Roboto-Black.ttf in Resources */,
+				96E20388298B65FB00C10D47 /* Roboto-Regular.ttf in Resources */,
+				96E2038B298B65FB00C10D47 /* Roboto-Thin.ttf in Resources */,
 				9638FEE727EC250C00851CAF /* Main.storyboard in Resources */,
+				96E20389298B65FB00C10D47 /* Roboto-BoldItalic.ttf in Resources */,
+				96708A8827EDBF94003834A0 /* SecondViewController.xib in Resources */,
+				9628281E2A5D36F400D7E71C /* CustomNativeAdView.xib in Resources */,
+				96E2038C298B65FB00C10D47 /* Roboto-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +312,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9638FEE427EC250C00851CAF /* ViewController.swift in Sources */,
+				96708A8727EDBF94003834A0 /* SecondViewController.swift in Sources */,
 				9638FEE027EC250C00851CAF /* AppDelegate.swift in Sources */,
+				96932D18293CF1BC0004119A /* BaseViewController.swift in Sources */,
+				9606BA2727ED7A1F00AA1374 /* UIViewControllerExtension.swift in Sources */,
+				9606BA2527ED79DE00AA1374 /* UIApplicationExtension.swift in Sources */,
 				9638FEE227EC250C00851CAF /* SceneDelegate.swift in Sources */,
+				96E91B9427EF4C5E003E7B0A /* StringExtension.swift in Sources */,
+				96932D1E293D0AD80004119A /* InterfaceVC.swift in Sources */,
+				96708A9127EE0FF1003834A0 /* UIColorExtension.swift in Sources */,
+				9628281D2A5D36F400D7E71C /* CustomNativeAdView.swift in Sources */,
+				96932D1A293CF1E00004119A /* ViewProtocol.swift in Sources */,
+				96E8B70C2A2EE82A00BC8C80 /* BannerVC.swift in Sources */,
+				96ED6BF927EDAA1400F4315D /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,14 +473,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CAHNRSZ4RH;
+				DEVELOPMENT_TEAM = 7KLZ98TLU2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AdmobLibraryDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,14 +503,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CAHNRSZ4RH;
+				DEVELOPMENT_TEAM = 7KLZ98TLU2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AdmobLibraryDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,6 +548,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		962828202A5D589D00D7E71C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.0;
+			};
+		};
+		9696EE1027F2E87600559454 /* XCRemoteSwiftPackageReference "AdMobManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/trinhxuanminh/AdMobManager.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		96B7BAA82A5D5A93003E95EE /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		962828212A5D589D00D7E71C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 962828202A5D589D00D7E71C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		9696EE1127F2E87700559454 /* AdMobManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9696EE1027F2E87600559454 /* XCRemoteSwiftPackageReference "AdMobManager" */;
+			productName = AdMobManager;
+		};
+		96B7BAA92A5D5A93003E95EE /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96B7BAA82A5D5A93003E95EE /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9638FED427EC250C00851CAF /* Project object */;
 }
