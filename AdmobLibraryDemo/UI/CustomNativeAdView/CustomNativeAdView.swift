@@ -52,7 +52,8 @@ class CustomNativeAdView: NativeAdMobView {
       }
       self.stopAnimation()
     }
-    register(id: "ca-app-pub-3940256099942544/3986624511", isFullScreen: false)
+    load(name: "Native")
+    load(name: <#T##String#>)
   }
   
   override func setColor() {

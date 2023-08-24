@@ -12,7 +12,7 @@ class SecondViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    AdMobManager.shared.load(type: .appOpen, name: "App_Open")
     // Do any additional setup after loading the view.
   }
   
@@ -21,15 +21,15 @@ class SecondViewController: UIViewController {
   }
   
   @IBAction func touchShowInterstitialAd(_ sender: Any) {
-    AdMobManager.shared.show(key: "Interstitial")
+    AdMobManager.shared.show(name: "Interstitial")
   }
   
   @IBAction func touchShowRewardAd(_ sender: Any) {
-    AdMobManager.shared.show(key: "Rewarded")
+    AdMobManager.shared.show(name: "Rewarded")
   }
   
   @IBAction func showRewardInterstitialAd(_ sender: Any) {
-    AdMobManager.shared.show(key: "RewardedInterstitial")
+    AdMobManager.shared.show(name: "Rewarded_Interstitial")
   }
   
   @IBAction func touchInterfaceBuilder(_ sender: Any) {

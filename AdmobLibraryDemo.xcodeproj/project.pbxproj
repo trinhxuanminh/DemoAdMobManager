@@ -25,6 +25,7 @@
 		96932D1E293D0AD80004119A /* InterfaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96932D1C293D0AD80004119A /* InterfaceVC.swift */; };
 		96932D1F293D0AD80004119A /* InterfaceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96932D1D293D0AD80004119A /* InterfaceVC.xib */; };
 		9696EE1227F2E87700559454 /* AdMobManager in Frameworks */ = {isa = PBXBuildFile; productRef = 9696EE1127F2E87700559454 /* AdMobManager */; };
+		96ADB7E02A96FC7E0048EB07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96ADB7DF2A96FC7E0048EB07 /* GoogleService-Info.plist */; };
 		96B7BAAA2A5D5A93003E95EE /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 96B7BAA92A5D5A93003E95EE /* NVActivityIndicatorView */; };
 		96E20385298B65FB00C10D47 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E20379298B65FA00C10D47 /* Roboto-Italic.ttf */; };
 		96E20386298B65FB00C10D47 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E2037A298B65FA00C10D47 /* Roboto-Black.ttf */; };
@@ -63,6 +64,7 @@
 		96932D19293CF1E00004119A /* ViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 		96932D1C293D0AD80004119A /* InterfaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceVC.swift; sourceTree = "<group>"; };
 		96932D1D293D0AD80004119A /* InterfaceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterfaceVC.xib; sourceTree = "<group>"; };
+		96ADB7DF2A96FC7E0048EB07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		96E20379298B65FA00C10D47 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		96E2037A298B65FA00C10D47 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		96E2037B298B65FB00C10D47 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		9638FEDE27EC250C00851CAF /* AdmobLibraryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				96ADB7DF2A96FC7E0048EB07 /* GoogleService-Info.plist */,
 				9638FEED27EC250F00851CAF /* Info.plist */,
 				9638FEDF27EC250C00851CAF /* AppDelegate.swift */,
 				9638FEE127EC250C00851CAF /* SceneDelegate.swift */,
@@ -300,6 +303,7 @@
 				9638FEE727EC250C00851CAF /* Main.storyboard in Resources */,
 				96E20389298B65FB00C10D47 /* Roboto-BoldItalic.ttf in Resources */,
 				96708A8827EDBF94003834A0 /* SecondViewController.xib in Resources */,
+				96ADB7E02A96FC7E0048EB07 /* GoogleService-Info.plist in Resources */,
 				9628281E2A5D36F400D7E71C /* CustomNativeAdView.xib in Resources */,
 				96E2038C298B65FB00C10D47 /* Roboto-ThinItalic.ttf in Resources */,
 			);
@@ -482,12 +486,13 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = MinhTX.AdmobLibraryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -512,12 +517,13 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = MinhTX.AdmobLibraryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

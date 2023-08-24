@@ -8,6 +8,7 @@
 import UIKit
 import GoogleMobileAds
 import AdMobManager
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,27 +18,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   ) -> Bool {
     // Override point for customization after application launch.
     GADMobileAds.sharedInstance().start(completionHandler: nil)
+    FirebaseApp.configure()
 //    GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["2077ef9a63d2b398840261c8221a0c9b"] // Sample device ID
     
-//    let bannerId = "ca-app-pub-3940256099942544/2934735716"
-//    let interstitialID = "ca-app-pub-3940256099942544/4411468910"
-//    let nativeID = "ca-app-pub-3940256099942544/3986624511"
-//    let appOpenID = "ca-app-pub-3940256099942544/5662855259"
-//    let rewardID = "ca-app-pub-3940256099942544/1712485313"
-    
-    AdMobManager.shared.register(key: "AppOpen", type: .appOpen, id: "ca-app-pub-3940256099942544/5662855259")
-    AdMobManager.shared.register(key: "Interstitial", type: .interstitial, id: "ca-app-pub-3940256099942544/4411468910")
-    AdMobManager.shared.register(key: "Rewarded", type: .rewarded, id: "ca-app-pub-3940256099942544/1712485313")
-    AdMobManager.shared.register(key: "RewardedInterstitial", type: .rewardedInterstitial, id: "ca-app-pub-3940256099942544/6978759866")
-    
-    AdMobManager.shared.setTimeBetween(key: "AppOpen", time: 4.0)
+    AdMobManager.shared.register(remoteKey: "AdMob_v1_0", completed: {
+      AdMobManager.shared.load(type: .interstitial, name: "Interstitial")
+      AdMobManager.shared.load(type: .rewarded, name: "Rewarded")
+      AdMobManager.shared.load(type: .rewardedInterstitial, name: "Rewarded_Interstitial")
+    })
     return true
   }
   
   // MARK: UISceneSession Lifecycle
   
   func applicationDidBecomeActive(_ application: UIApplication) {
-    AdMobManager.shared.show(key: "AppOpen")
+    AdMobManager.shared.show(name: "App_Open")
   }
   
   @available(iOS 13.0, *)

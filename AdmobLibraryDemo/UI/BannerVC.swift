@@ -21,7 +21,7 @@ class BannerVC: BaseViewController {
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    bannerAdMobView.register(id: "ca-app-pub-3940256099942544/2934735716", collapsible: .bottom)
+    bannerAdMobView.load(name: "Banner_3")
   }
   
   override func addComponents() {
