@@ -568,7 +568,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/trinhxuanminh/AdMobManager.git";
 			requirement = {
-				branch = main;
+				branch = develop/3.0.0;
 				kind = branch;
 			};
 		};
