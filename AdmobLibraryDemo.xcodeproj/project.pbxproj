@@ -17,6 +17,7 @@
 		9638FEE727EC250C00851CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9638FEE527EC250C00851CAF /* Main.storyboard */; };
 		9638FEE927EC250F00851CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9638FEE827EC250F00851CAF /* Assets.xcassets */; };
 		9638FEEC27EC250F00851CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9638FEEA27EC250F00851CAF /* LaunchScreen.storyboard */; };
+		966A654E2AA0A8D5002FBBBA /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 966A654D2AA0A8D5002FBBBA /* testData.json */; };
 		96708A8727EDBF94003834A0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96708A8527EDBF94003834A0 /* SecondViewController.swift */; };
 		96708A8827EDBF94003834A0 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96708A8627EDBF94003834A0 /* SecondViewController.xib */; };
 		96708A9127EE0FF1003834A0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96708A9027EE0FF0003834A0 /* UIColorExtension.swift */; };
@@ -57,6 +58,7 @@
 		9638FEE827EC250F00851CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9638FEEB27EC250F00851CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9638FEED27EC250F00851CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		966A654D2AA0A8D5002FBBBA /* testData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testData.json; sourceTree = "<group>"; };
 		96708A8527EDBF94003834A0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		96708A8627EDBF94003834A0 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		96708A9027EE0FF0003834A0 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		9638FEDE27EC250C00851CAF /* AdmobLibraryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				966A654D2AA0A8D5002FBBBA /* testData.json */,
 				96ADB7DF2A96FC7E0048EB07 /* GoogleService-Info.plist */,
 				9638FEED27EC250F00851CAF /* Info.plist */,
 				9638FEDF27EC250C00851CAF /* AppDelegate.swift */,
@@ -301,6 +304,7 @@
 				96E20388298B65FB00C10D47 /* Roboto-Regular.ttf in Resources */,
 				96E2038B298B65FB00C10D47 /* Roboto-Thin.ttf in Resources */,
 				9638FEE727EC250C00851CAF /* Main.storyboard in Resources */,
+				966A654E2AA0A8D5002FBBBA /* testData.json in Resources */,
 				96E20389298B65FB00C10D47 /* Roboto-BoldItalic.ttf in Resources */,
 				96708A8827EDBF94003834A0 /* SecondViewController.xib in Resources */,
 				96ADB7E02A96FC7E0048EB07 /* GoogleService-Info.plist in Resources */,

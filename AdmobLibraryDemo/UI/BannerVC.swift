@@ -21,7 +21,7 @@ class BannerVC: BaseViewController {
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    bannerAdMobView.load(name: "Banner_3")
+    bannerAdMobView.load(name: "Banner_3", rootViewController: self)
   }
   
   override func addComponents() {

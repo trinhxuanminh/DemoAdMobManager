@@ -52,7 +52,7 @@ class CustomNativeAdView: NativeAdMobView {
       }
       self.stopAnimation()
     }
-    load(name: "Native")
+    load(name: "Native", rootViewController: nil)
   }
   
   override func setColor() {

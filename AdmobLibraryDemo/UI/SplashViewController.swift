@@ -40,7 +40,7 @@ class SplashViewController: UIViewController {
     }
     self.timeButton.setTitle("\(timeLoading)%", for: .normal)
 
-    if let ready = AdMobManager.shared.isReady(name: "Interstitial"), ready {
+    if let ready = AdMobManager.shared.isReady(name: "Splash"), ready {
       self.timeInterval = 1.0
     }
 
@@ -48,8 +48,8 @@ class SplashViewController: UIViewController {
       self.timer?.invalidate()
       self.timer = nil
 
-      if let ready = AdMobManager.shared.isReady(name: "Interstitial"), ready {
-        AdMobManager.shared.show(name: "Interstitial", willPresent: self.toSecondViewController)
+      if let ready = AdMobManager.shared.isReady(name: "Splash"), ready {
+        AdMobManager.shared.show(name: "Splash", rootViewController: self, willPresent: self.toSecondViewController)
       } else {
         self.toSecondViewController()
       }

@@ -21,19 +21,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     FirebaseApp.configure()
 //    GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["2077ef9a63d2b398840261c8221a0c9b"] // Sample device ID
     
-    AdMobManager.shared.register(remoteKey: "AdMob_v1_0", completed: {
-      AdMobManager.shared.load(type: .interstitial, name: "Interstitial")
-      AdMobManager.shared.load(type: .rewarded, name: "Rewarded")
-      AdMobManager.shared.load(type: .rewardedInterstitial, name: "Rewarded_Interstitial")
-    })
+    if let url = Bundle.main.url(forResource: "testData", withExtension: "json"),
+       let data = try? Data(contentsOf: url) {
+      AdMobManager.shared.register(remoteKey: "AdMob_v1_0", defaultData: data, completed: {
+        AdMobManager.shared.load(type: .interstitial, name: "Splash")
+        AdMobManager.shared.load(type: .interstitial, name: "Interstitial")
+        AdMobManager.shared.load(type: .rewarded, name: "Rewarded")
+        AdMobManager.shared.load(type: .rewardedInterstitial, name: "Rewarded_Interstitial")
+      })
+    }
     return true
   }
   
   // MARK: UISceneSession Lifecycle
-  
-  func applicationDidBecomeActive(_ application: UIApplication) {
-    AdMobManager.shared.show(name: "App_Open")
-  }
   
   @available(iOS 13.0, *)
   func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

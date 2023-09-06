@@ -21,15 +21,17 @@ class SecondViewController: UIViewController {
   }
   
   @IBAction func touchShowInterstitialAd(_ sender: Any) {
-    AdMobManager.shared.show(name: "Interstitial")
+    if AdMobManager.shared.isReady(name: "Interstitial") == true {
+      AdMobManager.shared.show(name: "Interstitial", rootViewController: self)
+    }
   }
   
   @IBAction func touchShowRewardAd(_ sender: Any) {
-    AdMobManager.shared.show(name: "Rewarded")
+    AdMobManager.shared.show(name: "Rewarded", rootViewController: self)
   }
   
   @IBAction func showRewardInterstitialAd(_ sender: Any) {
-    AdMobManager.shared.show(name: "Rewarded_Interstitial")
+    AdMobManager.shared.show(name: "Rewarded_Interstitial", rootViewController: self)
   }
   
   @IBAction func touchInterfaceBuilder(_ sender: Any) {
