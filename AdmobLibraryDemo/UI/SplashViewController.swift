@@ -9,14 +9,6 @@ import UIKit
 import AdMobManager
 
 class SplashViewController: UIViewController {
-
-  @IBOutlet weak var timeButton: UIButton!
-
-  fileprivate var timeInterval: Double = 0.1
-  fileprivate var maxTime: Double = 30.0
-  fileprivate var time: Double = 0.0
-  fileprivate var timer: Timer?
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -24,35 +16,11 @@ class SplashViewController: UIViewController {
   }
 
   override func viewDidAppear(_ animated: Bool) {
-    self.timer = Timer.scheduledTimer(timeInterval: self.timeInterval, target: self, selector: #selector(self.setLoading), userInfo: nil, repeats: true)
-  }
-
-  @IBAction func touchSetTime(_ sender: Any) {
-    self.time = 0.0
-  }
-
-  @objc func setLoading() {
-    self.time += self.timeInterval
-
-    var timeLoading: Int = Int(self.time / self.maxTime * 100)
-    if timeLoading > 100 {
-      timeLoading = 100
-    }
-    self.timeButton.setTitle("\(timeLoading)%", for: .normal)
-
-    if let ready = AdMobManager.shared.isReady(name: "Splash"), ready {
-      self.timeInterval = 1.0
-    }
-
-    if self.time >= self.maxTime {
-      self.timer?.invalidate()
-      self.timer = nil
-
-      if let ready = AdMobManager.shared.isReady(name: "Splash"), ready {
-        AdMobManager.shared.show(name: "Splash", rootViewController: self, willPresent: self.toSecondViewController)
-      } else {
-        self.toSecondViewController()
+    AdMobManager.shared.addActionSuccessRegister { [weak self] in
+      guard let self = self else {
+        return
       }
+      AdMobManager.shared.show(name: "Splash", rootViewController: self, didShow: self.toSecondViewController, didFail: self.toSecondViewController)
     }
   }
 

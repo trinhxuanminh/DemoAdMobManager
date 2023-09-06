@@ -23,12 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     if let url = Bundle.main.url(forResource: "testData", withExtension: "json"),
        let data = try? Data(contentsOf: url) {
-      AdMobManager.shared.register(remoteKey: "AdMob_v1_0", defaultData: data, completed: {
-        AdMobManager.shared.load(type: .interstitial, name: "Splash")
-        AdMobManager.shared.load(type: .interstitial, name: "Interstitial")
-        AdMobManager.shared.load(type: .rewarded, name: "Rewarded")
-        AdMobManager.shared.load(type: .rewardedInterstitial, name: "Rewarded_Interstitial")
-      })
+      AdMobManager.shared.register(remoteKey: "AdMob_v1_0", defaultData: data)
+    }
+    AdMobManager.shared.addActionSuccessRegister {
+      AdMobManager.shared.load(type: .splash, name: "Splash")
+      AdMobManager.shared.load(type: .interstitial, name: "Interstitial")
+      AdMobManager.shared.load(type: .rewarded, name: "Rewarded")
+      AdMobManager.shared.load(type: .rewardedInterstitial, name: "Rewarded_Interstitial")
     }
     return true
   }
