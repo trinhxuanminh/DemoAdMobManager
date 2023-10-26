@@ -25,6 +25,7 @@ class SplashViewController: UIViewController {
   }
 
   func toSecondViewController() {
+    
     self.push(to: SecondViewController(), animated: false)
   }
 }

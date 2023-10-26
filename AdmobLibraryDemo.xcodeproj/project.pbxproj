@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9606BA2527ED79DE00AA1374 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606BA2427ED79DE00AA1374 /* UIApplicationExtension.swift */; };
 		9606BA2727ED7A1F00AA1374 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606BA2627ED7A1F00AA1374 /* UIViewControllerExtension.swift */; };
+		960978202ACD4B5C00E35B86 /* Size1NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9609781F2ACD4B5C00E35B86 /* Size1NativeAdView.xib */; };
+		960978222ACD4B7800E35B86 /* Size1NativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960978212ACD4B7800E35B86 /* Size1NativeAdView.swift */; };
 		9628281D2A5D36F400D7E71C /* CustomNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9628281B2A5D36F400D7E71C /* CustomNativeAdView.swift */; };
 		9628281E2A5D36F400D7E71C /* CustomNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9628281C2A5D36F400D7E71C /* CustomNativeAdView.xib */; };
 		962828222A5D589D00D7E71C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 962828212A5D589D00D7E71C /* SnapKit */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		9606BA2427ED79DE00AA1374 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		9606BA2627ED7A1F00AA1374 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		9609781F2ACD4B5C00E35B86 /* Size1NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Size1NativeAdView.xib; sourceTree = "<group>"; };
+		960978212ACD4B7800E35B86 /* Size1NativeAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size1NativeAdView.swift; sourceTree = "<group>"; };
 		9628281B2A5D36F400D7E71C /* CustomNativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNativeAdView.swift; sourceTree = "<group>"; };
 		9628281C2A5D36F400D7E71C /* CustomNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNativeAdView.xib; sourceTree = "<group>"; };
 		9638FEDC27EC250C00851CAF /* AdmobLibraryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdmobLibraryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +124,15 @@
 				96ED6BF727EDA9ED00F4315D /* ViewController */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		9609781E2ACD4B3E00E35B86 /* Size1 */ = {
+			isa = PBXGroup;
+			children = (
+				9609781F2ACD4B5C00E35B86 /* Size1NativeAdView.xib */,
+				960978212ACD4B7800E35B86 /* Size1NativeAdView.swift */,
+			);
+			name = Size1;
 			sourceTree = "<group>";
 		};
 		9628281F2A5D568C00D7E71C /* CustomNativeAdView */ = {
@@ -217,6 +230,7 @@
 				96932D1B293D0ABF0004119A /* Interface */,
 				96E8B7092A2EE81900BC8C80 /* Banner */,
 				9628281F2A5D568C00D7E71C /* CustomNativeAdView */,
+				9609781E2ACD4B3E00E35B86 /* Size1 */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -302,6 +316,7 @@
 				96E8B70D2A2EE82A00BC8C80 /* BannerVC.xib in Resources */,
 				96E20386298B65FB00C10D47 /* Roboto-Black.ttf in Resources */,
 				96E20388298B65FB00C10D47 /* Roboto-Regular.ttf in Resources */,
+				960978202ACD4B5C00E35B86 /* Size1NativeAdView.xib in Resources */,
 				96E2038B298B65FB00C10D47 /* Roboto-Thin.ttf in Resources */,
 				9638FEE727EC250C00851CAF /* Main.storyboard in Resources */,
 				966A654E2AA0A8D5002FBBBA /* testData.json in Resources */,
@@ -321,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96708A8727EDBF94003834A0 /* SecondViewController.swift in Sources */,
+				960978222ACD4B7800E35B86 /* Size1NativeAdView.swift in Sources */,
 				9638FEE027EC250C00851CAF /* AppDelegate.swift in Sources */,
 				96932D18293CF1BC0004119A /* BaseViewController.swift in Sources */,
 				9606BA2727ED7A1F00AA1374 /* UIViewControllerExtension.swift in Sources */,
@@ -488,8 +504,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,8 +535,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
