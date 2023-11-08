@@ -34,8 +34,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     AdMobManager.shared.show(name: "App_Open",
                              rootViewController: topVC,
-                             didShow: nil,
-                             didFail: nil)
+                             didFail: nil,
+                             didHide: nil)
   }
   
   func sceneWillResignActive(_ scene: UIScene) {

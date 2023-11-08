@@ -23,22 +23,30 @@ class SecondViewController: UIViewController {
   @IBAction func touchShowInterstitialAd(_ sender: Any) {
     AdMobManager.shared.show(name: "Interstitial",
                              rootViewController: self,
-                             didShow: nil,
-                             didFail: nil)
+                             didFail: nil,
+                             didHide: nil)
   }
   
   @IBAction func touchShowRewardAd(_ sender: Any) {
     AdMobManager.shared.show(name: "Rewarded",
-                             rootViewController: self,
-                             didShow: nil,
-                             didFail: nil)
+                             rootViewController: self, didFail: {
+      print("Fail")
+    }, didEarnReward: {
+      print("Earn Reward")
+    }, didHide: {
+      print("Hide")
+    })
   }
   
   @IBAction func showRewardInterstitialAd(_ sender: Any) {
     AdMobManager.shared.show(name: "Rewarded_Interstitial",
-                             rootViewController: self,
-                             didShow: nil,
-                             didFail: nil)
+                             rootViewController: self, didFail: {
+      print("Fail")
+    }, didEarnReward: {
+      print("Earn Reward")
+    }, didHide: {
+      print("Hide")
+    })
   }
   
   @IBAction func touchInterfaceBuilder(_ sender: Any) {
