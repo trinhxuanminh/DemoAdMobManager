@@ -11,8 +11,8 @@
 		9606BA2727ED7A1F00AA1374 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606BA2627ED7A1F00AA1374 /* UIViewControllerExtension.swift */; };
 		960978202ACD4B5C00E35B86 /* Size1NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9609781F2ACD4B5C00E35B86 /* Size1NativeAdView.xib */; };
 		960978222ACD4B7800E35B86 /* Size1NativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960978212ACD4B7800E35B86 /* Size1NativeAdView.swift */; };
+		961F653A2B04DD7B0057CC88 /* CustomNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961F65392B04DD7B0057CC88 /* CustomNativeAdView.xib */; };
 		9628281D2A5D36F400D7E71C /* CustomNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9628281B2A5D36F400D7E71C /* CustomNativeAdView.swift */; };
-		9628281E2A5D36F400D7E71C /* CustomNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9628281C2A5D36F400D7E71C /* CustomNativeAdView.xib */; };
 		962828222A5D589D00D7E71C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 962828212A5D589D00D7E71C /* SnapKit */; };
 		9638FEE027EC250C00851CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638FEDF27EC250C00851CAF /* AppDelegate.swift */; };
 		9638FEE227EC250C00851CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638FEE127EC250C00851CAF /* SceneDelegate.swift */; };
@@ -53,8 +53,8 @@
 		9606BA2627ED7A1F00AA1374 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		9609781F2ACD4B5C00E35B86 /* Size1NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Size1NativeAdView.xib; sourceTree = "<group>"; };
 		960978212ACD4B7800E35B86 /* Size1NativeAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size1NativeAdView.swift; sourceTree = "<group>"; };
+		961F65392B04DD7B0057CC88 /* CustomNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNativeAdView.xib; sourceTree = "<group>"; };
 		9628281B2A5D36F400D7E71C /* CustomNativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNativeAdView.swift; sourceTree = "<group>"; };
-		9628281C2A5D36F400D7E71C /* CustomNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNativeAdView.xib; sourceTree = "<group>"; };
 		9638FEDC27EC250C00851CAF /* AdmobLibraryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdmobLibraryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9638FEDF27EC250C00851CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9638FEE127EC250C00851CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				9628281B2A5D36F400D7E71C /* CustomNativeAdView.swift */,
-				9628281C2A5D36F400D7E71C /* CustomNativeAdView.xib */,
+				961F65392B04DD7B0057CC88 /* CustomNativeAdView.xib */,
 			);
 			path = CustomNativeAdView;
 			sourceTree = "<group>";
@@ -316,6 +316,7 @@
 				96E8B70D2A2EE82A00BC8C80 /* BannerVC.xib in Resources */,
 				96E20386298B65FB00C10D47 /* Roboto-Black.ttf in Resources */,
 				96E20388298B65FB00C10D47 /* Roboto-Regular.ttf in Resources */,
+				961F653A2B04DD7B0057CC88 /* CustomNativeAdView.xib in Resources */,
 				960978202ACD4B5C00E35B86 /* Size1NativeAdView.xib in Resources */,
 				96E2038B298B65FB00C10D47 /* Roboto-Thin.ttf in Resources */,
 				9638FEE727EC250C00851CAF /* Main.storyboard in Resources */,
@@ -323,7 +324,6 @@
 				96E20389298B65FB00C10D47 /* Roboto-BoldItalic.ttf in Resources */,
 				96708A8827EDBF94003834A0 /* SecondViewController.xib in Resources */,
 				96ADB7E02A96FC7E0048EB07 /* GoogleService-Info.plist in Resources */,
-				9628281E2A5D36F400D7E71C /* CustomNativeAdView.xib in Resources */,
 				96E2038C298B65FB00C10D47 /* Roboto-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,7 +589,7 @@
 			repositoryURL = "https://github.com/trinhxuanminh/AdMobManager.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.2.0;
+				version = 3.3.0;
 			};
 		};
 		96B7BAA82A5D5A93003E95EE /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {

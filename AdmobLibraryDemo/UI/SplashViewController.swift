@@ -20,7 +20,11 @@ class SplashViewController: UIViewController {
       guard let self = self else {
         return
       }
-      AdMobManager.shared.show(name: "Splash", rootViewController: self, didFail: self.toSecondViewController, didHide: self.toSecondViewController)
+      AdMobManager.shared.show(type: .splash,
+                               name: "Splash",
+                               rootViewController: self,
+                               didFail: self.toSecondViewController,
+                               didHide: self.toSecondViewController)
     }
   }
 

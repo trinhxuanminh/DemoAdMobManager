@@ -27,9 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     AdMobManager.shared.addActionSuccessRegister {
       AdMobManager.shared.load(type: .splash, name: "Splash")
-      AdMobManager.shared.load(type: .interstitial, name: "Interstitial")
+      AdMobManager.shared.load(type: .interstitial, name: "Interstitial_1")
+      AdMobManager.shared.load(type: .interstitial, name: "Interstitial_2")
       AdMobManager.shared.load(type: .rewarded, name: "Rewarded")
       AdMobManager.shared.load(type: .rewardedInterstitial, name: "Rewarded_Interstitial")
+      AdMobManager.shared.preloadNative(name: "Native")
     }
     return true
   }

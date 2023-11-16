@@ -21,14 +21,16 @@ class SecondViewController: UIViewController {
   }
   
   @IBAction func touchShowInterstitialAd(_ sender: Any) {
-    AdMobManager.shared.show(name: "Interstitial",
+    AdMobManager.shared.show(type: .interstitial,
+                             name: "Interstitial_1",
                              rootViewController: self,
                              didFail: nil,
                              didHide: nil)
   }
   
   @IBAction func touchShowRewardAd(_ sender: Any) {
-    AdMobManager.shared.show(name: "Rewarded",
+    AdMobManager.shared.show(type: .rewarded,
+                             name: "Rewarded",
                              rootViewController: self, didFail: {
       print("Fail")
     }, didEarnReward: {
@@ -39,7 +41,8 @@ class SecondViewController: UIViewController {
   }
   
   @IBAction func showRewardInterstitialAd(_ sender: Any) {
-    AdMobManager.shared.show(name: "Rewarded_Interstitial",
+    AdMobManager.shared.show(type: .rewardedInterstitial,
+                             name: "Rewarded_Interstitial",
                              rootViewController: self, didFail: {
       print("Fail")
     }, didEarnReward: {

@@ -32,7 +32,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     guard let topVC = UIApplication.topStackViewController() else {
       return
     }
-    AdMobManager.shared.show(name: "App_Open",
+    AdMobManager.shared.show(type: .appOpen,
+                             name: "App_Open",
                              rootViewController: topVC,
                              didFail: nil,
                              didHide: nil)
