@@ -589,7 +589,7 @@
 			repositoryURL = "https://github.com/trinhxuanminh/AdMobManager.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.3.0;
+				version = 3.4.0;
 			};
 		};
 		96B7BAA82A5D5A93003E95EE /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
