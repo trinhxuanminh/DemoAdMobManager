@@ -46,13 +46,14 @@ class CustomNativeAdView: NativeAdMobView {
   
   override func setProperties() {
     startAnimation()
-    binding(nativeAdView: nativeAdView) { [weak self] in
+    load(name: "Native_1", nativeAdView: nativeAdView, didReceive: { [weak self] in
       guard let self = self else {
         return
       }
       self.stopAnimation()
-    }
-    load(name: "Native", rootViewController: nil)
+    }, didError: {
+      print("Error")
+    })
   }
   
   override func setColor() {

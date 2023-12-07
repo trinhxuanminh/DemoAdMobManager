@@ -7,29 +7,33 @@
 
 import UIKit
 import AdMobManager
+import Combine
 
 class SplashViewController: UIViewController {
+  private var subscriptions = [AnyCancellable]()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    // Do any additional setup after loading the view.
-  }
-
-  override func viewDidAppear(_ animated: Bool) {
-    AdMobManager.shared.addActionSuccessRegister { [weak self] in
-      guard let self = self else {
-        return
-      }
-      AdMobManager.shared.show(type: .splash,
-                               name: "Splash",
-                               rootViewController: self,
-                               didFail: self.toSecondViewController,
-                               didHide: self.toSecondViewController)
-    }
-  }
-
-  func toSecondViewController() {
     
+    // Do any additional setup after loading the view.
+    AdMobManager.shared.$state
+      .receive(on: DispatchQueue.main)
+      .sink { [weak self] state in
+        guard let self else {
+          return
+        }
+        guard state != .unknow else {
+          return
+        }
+        AdMobManager.shared.show(type: .splash,
+                                 name: "Splash",
+                                 rootViewController: self,
+                                 didFail: self.toSecondViewController,
+                                 didHide: self.toSecondViewController)
+      }.store(in: &subscriptions)
+  }
+  
+  func toSecondViewController() {
     self.push(to: SecondViewController(), animated: false)
   }
 }

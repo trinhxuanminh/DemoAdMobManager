@@ -59,4 +59,8 @@ class SecondViewController: UIViewController {
   @IBAction func touchBanner(_ sender: Any) {
     push(to: BannerVC(), animated: true)
   }
+  
+  @IBAction func touchSettingPrivacy(_ sender: Any) {
+    AdMobManager.shared.requestConsentUpdate()
+  }
 }

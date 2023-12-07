@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -95,12 +95,27 @@
                         <action selector="touchBanner:" destination="-1" eventType="touchUpInside" id="pIg-8p-ju2"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he4-Gq-28U">
+                    <rect key="frame" x="0.0" y="827" width="414" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="EHg-bW-oPT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Setting privacy">
+                        <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="touchSettingPrivacy:" destination="-1" eventType="touchUpInside" id="eyz-HP-Vwd"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="6aS-J7-CFt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Qj-TF-Y9W"/>
                 <constraint firstItem="b3p-5B-jGN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3G5-r9-hs0"/>
+                <constraint firstItem="he4-Gq-28U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4YA-kx-nMM"/>
                 <constraint firstItem="hqy-ZG-RsW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8C3-Vk-tIs"/>
                 <constraint firstAttribute="trailing" secondItem="GNb-Zm-BrO" secondAttribute="trailing" id="FDZ-2x-KsN"/>
                 <constraint firstItem="6aS-J7-CFt" firstAttribute="top" secondItem="RUq-88-qch" secondAttribute="bottom" constant="30" id="FOJ-Li-n2S"/>
@@ -108,9 +123,11 @@
                 <constraint firstItem="GNb-Zm-BrO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pey-9o-yF8"/>
                 <constraint firstItem="b3p-5B-jGN" firstAttribute="top" secondItem="GNb-Zm-BrO" secondAttribute="bottom" constant="30" id="Rc3-Pk-Sul"/>
                 <constraint firstItem="hqy-ZG-RsW" firstAttribute="top" secondItem="6aS-J7-CFt" secondAttribute="bottom" constant="30" id="Yrj-Ja-Nob"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="he4-Gq-28U" secondAttribute="bottom" id="ZKg-Iv-nUl"/>
                 <constraint firstItem="b3p-5B-jGN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZUa-pJ-ofS"/>
                 <constraint firstItem="RUq-88-qch" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aVa-8l-jCX"/>
                 <constraint firstItem="GNb-Zm-BrO" firstAttribute="top" secondItem="rGy-0y-ZMi" secondAttribute="bottom" constant="30" id="d0P-ze-IUI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="he4-Gq-28U" secondAttribute="trailing" id="gxT-Bl-Owk"/>
                 <constraint firstAttribute="trailing" secondItem="hqy-ZG-RsW" secondAttribute="trailing" id="jl5-TV-VxY"/>
                 <constraint firstItem="RUq-88-qch" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kHB-83-FxB"/>
                 <constraint firstItem="RUq-88-qch" firstAttribute="top" secondItem="b3p-5B-jGN" secondAttribute="bottom" constant="30" id="lUh-l4-gqj"/>

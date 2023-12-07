@@ -19,30 +19,25 @@ class BannerVC: BaseViewController {
     return loadingView
   }()
   
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-    bannerAdMobView.load(name: "Banner_3", rootViewController: self)
-  }
-  
   override func addComponents() {
-    view.addSubview(loadingView)
+    bannerAdMobView.addSubview(loadingView)
   }
   
   override func setConstraints() {
     loadingView.snp.makeConstraints { make in
-      make.center.equalTo(bannerAdMobView)
+      make.center.equalToSuperview()
       make.width.height.equalTo(20)
     }
   }
   
   override func setProperties() {
     loadingView.startAnimating()
-    bannerAdMobView.binding { [weak self] in
+    bannerAdMobView.load(name: "Banner_2", rootViewController: self, didReceive: { [weak self] in
       guard let self = self else {
         return
       }
       self.loadingView.stopAnimating()
-    }
+    })
   }
   
   override func setColor() {
