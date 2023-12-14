@@ -37,7 +37,7 @@ class BannerVC: BaseViewController {
         return
       }
       self.loadingView.stopAnimating()
-    })
+    }, didError: nil)
   }
   
   override func setColor() {
