@@ -7,160 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "60439C37-3280-4D1E-818C-8168500B1911"
+            uuid = "8659505A-05D4-47CB-8516-BF60123E1635"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../../../../Library/Developer/Xcode/DerivedData/AdmobLibraryDemo-fjuirufhffmocqbkcqtrrsgctrox/SourcePackages/checkouts/AdMobManager/Sources/AdMobManager/AdMobManager.swift"
+            filePath = "../../../../../../Library/Developer/Xcode/DerivedData/AdmobLibraryDemo-fjuirufhffmocqbkcqtrrsgctrox/SourcePackages/checkouts/AdMobManager/Sources/AdMobManager/FrequencyManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "474"
-            endingLineNumber = "474"
-            landmarkName = "checkConsent()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "11DC3EEB-4629-41F1-A47C-79E9DF1CFBC5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../../../Library/Developer/Xcode/DerivedData/AdmobLibraryDemo-fjuirufhffmocqbkcqtrrsgctrox/SourcePackages/checkouts/AdMobManager/Sources/AdMobManager/AdMobManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "459"
-            endingLineNumber = "459"
-            landmarkName = "checkConsent()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0E5365CA-00F2-49B5-9DE6-9AA346689E5A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../../../Library/Developer/Xcode/DerivedData/AdmobLibraryDemo-fjuirufhffmocqbkcqtrrsgctrox/SourcePackages/checkouts/AdMobManager/Sources/AdMobManager/AdMobManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "464"
-            endingLineNumber = "464"
-            landmarkName = "checkConsent()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2B0020CA-DC8C-4ED8-A703-124DD6F1E829"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../../../Library/Developer/Xcode/DerivedData/AdmobLibraryDemo-fjuirufhffmocqbkcqtrrsgctrox/SourcePackages/checkouts/AdMobManager/Sources/AdMobManager/AdMobManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "register(remoteKey:defaultData:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "10299F05-7088-40D7-8AE5-C23DD2CC60B5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../../../Library/Developer/Xcode/DerivedData/AdmobLibraryDemo-fjuirufhffmocqbkcqtrrsgctrox/SourcePackages/checkouts/AdMobManager/Sources/AdMobManager/AdMobManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "register(remoteKey:defaultData:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B638A459-CFBA-41EA-8C19-F3BC89484393"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../../../Library/Developer/Xcode/DerivedData/AdmobLibraryDemo-fjuirufhffmocqbkcqtrrsgctrox/SourcePackages/checkouts/AdMobManager/Sources/AdMobManager/AdMobManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "369"
-            endingLineNumber = "369"
-            landmarkName = "fetchConsentCache()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2588D21C-A944-4CC4-85B9-54467A363F7D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../../../Library/Developer/Xcode/DerivedData/AdmobLibraryDemo-fjuirufhffmocqbkcqtrrsgctrox/SourcePackages/checkouts/AdMobManager/Sources/AdMobManager/AdMobManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "376"
-            endingLineNumber = "376"
-            landmarkName = "fetchDefault()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D9C3FF37-1B32-4061-8DB4-1938D446E179"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../../../Library/Developer/Xcode/DerivedData/AdmobLibraryDemo-fjuirufhffmocqbkcqtrrsgctrox/SourcePackages/checkouts/AdMobManager/Sources/AdMobManager/AdMobManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "362"
-            endingLineNumber = "362"
-            landmarkName = "fetchAdMobCache()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7AF89C91-CFB6-457A-AE4D-B5F01950C883"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../../../Library/Developer/Xcode/DerivedData/AdmobLibraryDemo-fjuirufhffmocqbkcqtrrsgctrox/SourcePackages/checkouts/AdMobManager/Sources/AdMobManager/AdMobManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "412"
-            endingLineNumber = "412"
-            landmarkName = "fetchRemote()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A9792DD6-A6E8-44A4-97FB-344693B908C5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../../../Library/Developer/Xcode/DerivedData/AdmobLibraryDemo-fjuirufhffmocqbkcqtrrsgctrox/SourcePackages/checkouts/AdMobManager/Sources/AdMobManager/AdMobManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "413"
-            endingLineNumber = "413"
-            landmarkName = "fetchRemote()"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "fetch()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
