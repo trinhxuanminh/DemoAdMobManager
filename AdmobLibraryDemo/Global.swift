@@ -20,7 +20,7 @@ extension Global {
     AdMobManager.shared.activeDebug(testDeviceIdentifiers: ["F30F750C-7BEE-4E11-BB0A-DE036C2006F2"],
                                     reset: true)
     
-//    AdMobManager.shared.upgradePremium()
+    AdMobManager.shared.upgradePremium()
     
     AdMobManager.shared.$state
       .receive(on: DispatchQueue.main)
@@ -38,7 +38,7 @@ extension Global {
     
     if let url = Bundle.main.url(forResource: "testData", withExtension: "json"),
        let data = try? Data(contentsOf: url) {
-      AdMobManager.shared.register(remoteKey: "AdMob_v1_0", defaultData: data)
+      AdMobManager.shared.register(defaultData: data)
     }
   }
 }
