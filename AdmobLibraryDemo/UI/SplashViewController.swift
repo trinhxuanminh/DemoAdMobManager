@@ -22,14 +22,22 @@ class SplashViewController: UIViewController {
         guard let self else {
           return
         }
-        guard state != .unknow else {
-          return
+        if state == .allow {
+          AdMobManager.shared.load(type: .splash, name: "Splash")
+          AdMobManager.shared.load(type: .interstitial, name: "Interstitial_1")
+          AdMobManager.shared.load(type: .interstitial, name: "Interstitial_2")
+          AdMobManager.shared.load(type: .rewarded, name: "Rewarded")
+          AdMobManager.shared.load(type: .rewardedInterstitial, name: "Rewarded_Interstitial")
+          AdMobManager.shared.preloadNative(name: "Native")
         }
-        AdMobManager.shared.show(type: .splash,
-                                 name: "Splash",
-                                 rootViewController: self,
-                                 didFail: self.toSecondViewController,
-                                 didHide: self.toSecondViewController)
+        
+        if state != .unknow {
+          AdMobManager.shared.show(type: .splash,
+                                   name: "Splash",
+                                   rootViewController: self,
+                                   didFail: self.toSecondViewController,
+                                   didHide: self.toSecondViewController)
+        }
       }.store(in: &subscriptions)
   }
   

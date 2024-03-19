@@ -22,23 +22,9 @@ extension Global {
     
 //    AdMobManager.shared.upgradePremium()
     
-    AdMobManager.shared.$state
-      .receive(on: DispatchQueue.main)
-      .sink { state in
-        guard state == .allow else {
-          return
-        }
-        AdMobManager.shared.load(type: .splash, name: "Splash")
-        AdMobManager.shared.load(type: .interstitial, name: "Interstitial_1")
-        AdMobManager.shared.load(type: .interstitial, name: "Interstitial_2")
-        AdMobManager.shared.load(type: .rewarded, name: "Rewarded")
-        AdMobManager.shared.load(type: .rewardedInterstitial, name: "Rewarded_Interstitial")
-        AdMobManager.shared.preloadNative(name: "Native_1")
-      }.store(in: &subscriptions)
-    
     if let url = Bundle.main.url(forResource: "testData", withExtension: "json"),
        let data = try? Data(contentsOf: url) {
-      AdMobManager.shared.register(remoteKey: "AdMob_v1_0", defaultData: data)
+      AdMobManager.shared.register(remoteKey: "ADMOB_V1_0", defaultData: data)
     }
   }
 }

@@ -3,22 +3,4 @@
    uuid = "67B48597-5F52-40C3-8C42-CD81680C4925"
    type = "1"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8659505A-05D4-47CB-8516-BF60123E1635"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../../../Library/Developer/Xcode/DerivedData/AdmobLibraryDemo-fjuirufhffmocqbkcqtrrsgctrox/SourcePackages/checkouts/AdMobManager/Sources/AdMobManager/FrequencyManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "fetch()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>

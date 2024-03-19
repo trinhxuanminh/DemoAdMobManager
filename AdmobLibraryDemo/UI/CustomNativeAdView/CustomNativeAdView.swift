@@ -46,7 +46,7 @@ class CustomNativeAdView: NativeAdMobView {
   
   override func setProperties() {
     startAnimation()
-    load(name: "Native_1", nativeAdView: nativeAdView, didReceive: { [weak self] in
+    load(name: "Native", nativeAdView: nativeAdView, didReceive: { [weak self] in
       guard let self = self else {
         return
       }
