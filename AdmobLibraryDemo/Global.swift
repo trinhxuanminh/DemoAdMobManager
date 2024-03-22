@@ -17,7 +17,7 @@ class Global {
 
 extension Global {
   func fetch() {
-    AdMobManager.shared.activeDebug(testDeviceIdentifiers: ["F30F750C-7BEE-4E11-BB0A-DE036C2006F2"],
+    AdMobManager.shared.activeDebug(testDeviceIdentifiers: ["3ECCFEAA-3A9D-41C9-8FBE-9AFB0D65B837"],
                                     reset: true)
     
 //    AdMobManager.shared.upgradePremium()

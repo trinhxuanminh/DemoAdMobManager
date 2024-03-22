@@ -576,8 +576,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/trinhxuanminh/AdMobManager.git";
 			requirement = {
-				kind = exactVersion;
-				version = 4.0.0;
+				branch = develop/4.1.0;
+				kind = branch;
 			};
 		};
 		96B7BAA82A5D5A93003E95EE /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
